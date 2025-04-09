@@ -10,7 +10,7 @@ This tool simplifies the process of organizing incoming customer samples by:
 ✅ Storing metadata (company name, sample details, units, etc.) in a CSV file.
 ✅ Generating plots to visualize sample entries over time.
 
-============================================================================================
+=========================================================================
 ⚙️ Features
 1. User-Friendly GUI (PySimpleGUI)
   Input fields for:
@@ -34,7 +34,7 @@ This tool simplifies the process of organizing incoming customer samples by:
   Click "Plot" to generate:
     📊 Yearly/Monthly trends of sample entries (using Matplotlib).
 
-============================================================================================
+=========================================================================
 🚀 Installation
 1. Prerequisites:
   - Python 3.8+
@@ -46,7 +46,7 @@ This tool simplifies the process of organizing incoming customer samples by:
   bash
   python sample_administration.py
 
-============================================================================================
+=========================================================================
 🖥️ Usage
 1. Fill in the form:
   - Region: Select Europe/Asia or USA.
@@ -59,7 +59,7 @@ This tool simplifies the process of organizing incoming customer samples by:
 
 3. Click "Plot" to visualize historical entries.
 
-============================================================================================
+=========================================================================
 📂 Folder Structure Example
 //Athene/Messungen/  
 └── Company_Name/  
@@ -74,17 +74,17 @@ Kunde	                      Company name	              ABC Corp
 Probename	                  Sample details + units	    Sample123 (5x)
 Ergebnisse Serverordner	    Folder path	                //Athene/...
 
-============================================================================================
+=========================================================================
 ⚠️ Notes
 - Server Paths: Modify measurementPath_Europe/USA and csv_file_path in the script if needed.
 - Backdating: Commit dates can be faked (see Git tricks but push dates remain accurate.
 - Ethical Use: Avoid misrepresenting data in the CSV/folders.
 
-============================================================================================
+=========================================================================
 📜 License
 MIT License - Free for commercial and personal use.
 
-============================================================================================
+=========================================================================
 🔗 How to Contribute
 Fork this repository.
 
