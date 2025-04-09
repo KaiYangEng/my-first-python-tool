@@ -6,11 +6,15 @@ Python PySimpleGUI Pandas
 
 📌 Overview
 This tool simplifies the process of organizing incoming customer samples by:
+
 ✅ Automatically creating folders in the company server (//Athene/Messungen/).
+
 ✅ Storing metadata (company name, sample details, units, etc.) in a CSV file.
+
 ✅ Generating plots to visualize sample entries over time.
 
-=========================================================================
+===========================================================================================
+
 ⚙️ Features
 1. User-Friendly GUI (PySimpleGUI)
   Input fields for:
@@ -22,6 +26,7 @@ This tool simplifies the process of organizing incoming customer samples by:
   Creates a parent folder for the company (if it doesn’t exist).
 
   Generates subfolders:
+  
   📂 [Date]_[Units]x_[SampleName]  
     ├── 0_Received  
     ├── 1_Measurement  
@@ -32,21 +37,24 @@ This tool simplifies the process of organizing incoming customer samples by:
 
 4. Data Visualization
   Click "Plot" to generate:
+
     📊 Yearly/Monthly trends of sample entries (using Matplotlib).
 
-=========================================================================
+===========================================================================================
+
 🚀 Installation
 1. Prerequisites:
   - Python 3.8+
   - Required libraries:
       bash
       pip install PySimpleGUI pandas matplotlib
-    
+
 2. Run the Script:
   bash
   python sample_administration.py
 
-=========================================================================
+===========================================================================================
+
 🖥️ Usage
 1. Fill in the form:
   - Region: Select Europe/Asia or USA.
@@ -59,32 +67,31 @@ This tool simplifies the process of organizing incoming customer samples by:
 
 3. Click "Plot" to visualize historical entries.
 
-=========================================================================
-📂 Folder Structure Example
-//Athene/Messungen/  
-└── Company_Name/  
-    └── 2024-05-20_5x_Sample123/  
-        ├── 0_Received/  
-        ├── 1_Measurement/  
-        └── 2_Returned/  
-📝 CSV Fields
-Column (German)	            Description	                Example
-Eingangsdatum	              Entry date (YYYY-MM-DD)	    2024-05-20
-Kunde	                      Company name	              ABC Corp
-Probename	                  Sample details + units	    Sample123 (5x)
-Ergebnisse Serverordner	    Folder path	                //Athene/...
+===========================================================================================
 
-=========================================================================
+📂 Folder Structure Example
+
+![image](https://github.com/user-attachments/assets/7d5645e8-f5b2-4ba3-b626-c8a9108b8fc6)
+
+        
+📝 CSV Fields
+
+![image](https://github.com/user-attachments/assets/e3e181f7-79a9-4df8-89dd-c1387f20030a)
+
+===========================================================================================
+
 ⚠️ Notes
 - Server Paths: Modify measurementPath_Europe/USA and csv_file_path in the script if needed.
 - Backdating: Commit dates can be faked (see Git tricks but push dates remain accurate.
 - Ethical Use: Avoid misrepresenting data in the CSV/folders.
 
-=========================================================================
+===========================================================================================
+
 📜 License
 MIT License - Free for commercial and personal use.
 
-=========================================================================
+===========================================================================================
+
 🔗 How to Contribute
 Fork this repository.
 
